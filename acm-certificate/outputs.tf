@@ -7,3 +7,8 @@ output "validation_record_fqdns" {
   description = "List of FQDNs used for DNS validation"
   value       = [for record in aws_route53_record.cert_validation : record.fqdn]
 }
+
+output "zone_id" {
+  value       = var.zone_id
+  description = "The Route 53 zone ID used for validation"
+}
