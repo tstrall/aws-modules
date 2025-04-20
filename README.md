@@ -27,7 +27,7 @@ More modules will be added as shared patterns emerge.
 
 ```hcl
 module "acm_certificate" {
-  source = "git::https://github.com/tstrall/aws-modules.git//acm-certificate?ref=v1.0.0"
+  source = "git::https://github.com/usekarma/aws-modules.git//acm-certificate?ref=v1.0.0"
 
   site_name      = "example.com"
   zone_name      = "example.com."
