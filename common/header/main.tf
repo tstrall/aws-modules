@@ -1,8 +1,3 @@
-terraform {
-  # Required for Terragrunt compatibility
-  backend "s3" {}
-}
-
 # Default AWS provider
 provider "aws" {
   region = var.region
@@ -25,4 +20,3 @@ locals {
   config_path  = data.aws_ssm_parameter.config.name
   runtime_path = "${var.iac_prefix}/${var.component_name}/${var.nickname}/runtime"
 }
-W
